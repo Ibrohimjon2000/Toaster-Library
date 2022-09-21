@@ -21,3 +21,13 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.Ibrohimjon2000:Toaster-Library:0.1.0'
 	}
+
+And now you can use the library in your activity
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        ToasterMessage().s(this,"Hello world")
+    }
+}
