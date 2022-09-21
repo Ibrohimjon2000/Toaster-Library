@@ -25,9 +25,9 @@ Step 2. Add the dependency
 And now you can use the library in your activity
 
         class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        ToasterMessage().s(this,"Hello world")
-    }
-}
+            override fun onCreate(savedInstanceState: Bundle?) {
+                super.onCreate(savedInstanceState)
+                setContentView(R.layout.activity_main)
+                ToasterMessage().s(this,"Hello world")
+            }
+       }
